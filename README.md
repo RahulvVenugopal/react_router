@@ -1,82 +1,47 @@
-React Router SPA – Protected Dashboard with Nested Routes
+# **React Router SPA – Protected Dashboard with Nested Routes**
 
-A modern Single Page Application (SPA) built using React Router v6, featuring protected routes and nested dashboard pages. This project is ideal for learning routing concepts or building a starter React application with authentication logic.
+A modern **Single Page Application (SPA)** built using **React Router v6**, featuring **protected routes**, **nested dashboards**, and a clean routing architecture.  
+This project serves as a solid foundation for building scalable React applications with authentication and layout management.
 
-🚀 Features
-🏠 Public Pages
+---
 
-Home – Simple landing page
+## 🔹 **Features**
 
-Login – login system using localStorage
+### **Public Pages**
+- **Home** – Landing page  
+- **Login** – Authentication using `localStorage`
 
-🔐 Protected Dashboard
+### **Protected Dashboard (Login Required)**
+Includes:
+- **Profile**
+- **Settings**
+- **Notifications**
 
-Accessible only when logged in:
+### **Routing Highlights**
+- **PrivateRoute** for route protection  
+- **Nested routing** inside Dashboard  
+- **Automatic redirection** for unauthorized users  
 
-Profile
+---
 
-Settings
+## 🎯 **Purpose of the Project**
 
-Notifications
+This project is designed to help developers:
 
-🧭 Routing Highlights
+- **Learn React Router v6 deeply**
+- **Implement protected routes**
+- **Build nested layouts inside dashboards**
+- **Understand real-world SPA structure**
+- **Use localStorage for demo authentication**
 
-Protected route guard (PrivateRoute)
+---
 
-Nested routing inside Dashboard
+## 📦 **Tech Stack**
 
-Auto-redirect on unauthorized access
+- **React 18**
+- **React Router v6**
+- **JavaScript (ES6+)**
+- **LocalStorage** for basic authentication
+- **CSS** for layout & styling
 
-
-The app will open at:
-👉 http://localhost:3000
-
-🔑 Authentication Logic (Simple & Fake)
-
-Clicking Login stores:
-
-{ "isLoggedIn": true }
-
-
-into localStorage.
-
-Dashboard pages are shown only if logged in.
-
-Logout removes the key and redirects to /login.
-
-This is strictly for demo purposes — not production-level security.
-
-📌 Available Routes
-Route	Description
-/	Home Page
-/login	Login Page
-/dashboard	Protected Dashboard Layout
-/dashboard/profile	User Profile
-/dashboard/settings	Account Settings
-/dashboard/notifications	Notifications Page
-🎯 Purpose of the Project
-
-This mini-project is perfect for:
-
-Learning React Router v6
-
-Understanding protected routes
-
-Practicing nested layouts
-
-Creating a clean React starter project
-
-📦 Tech Stack
-
-React 18
-
-React Router v6
-
-JavaScript (ES6+)
-
-LocalStorage (for auth)
-
-CSS (basic styling)
-
-output :
-
+---
