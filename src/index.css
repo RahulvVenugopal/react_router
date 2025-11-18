@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f8fa;
+  color: #111;
+}
+
+/* Global typography scale */
+:root {
+  --base-font-size: 18px; /* increase this to scale the whole site */
+}
+
+html { font-size: var(--base-font-size); }
+
+body { line-height: 1.5; }
+
+.topnav {
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #24292f;
+  justify-content: center; /* center nav links horizontally */
+  align-items: center;
+}
+.topnav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.topnav a {
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+.topnav a:hover { background: rgba(255,255,255,0.06); }
+
+/* Make the header area occupy full width and keep links centered */
+header.site-header { width: 100%; display:flex; justify-content:center; }
+
+main {
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  /* sensible default max width, can be overridden */
+  max-width: 900px;
+}
+
+/* Headings: stronger/full font weight and larger sizes */
+
+/* Headings: stronger/full font weight, larger sizes, centered */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 800; /* make headings bold / full */
+  margin: 0 0 0.5rem 0;
+  color: #0b2545;
+  text-align: center; /* center headings site-wide per request */
+}
+
+/* Bigger heading sizes for a professional look */
+h1 { font-size: 2.75rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Slightly larger paragraph text */
+p { font-size: 1rem; margin: 0 0 0.75rem 0; }
+
+.dashboard-nav a { margin-right: 12px; }
+
+/* Centering helpers for login / small forms */
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 64px);
+  padding: 20px;
+}
+
+.login-card {
+  max-width: 420px;
+  width: 100%;
+}
+
+/* Form elements */
+.form-group { margin-bottom: 12px; display:flex; flex-direction:column; }
+.form-group label { font-size:14px; margin-bottom:6px; }
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"] {
+  padding: 8px 10px;
+  border: 1px solid #dbe3ea;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #0366d6;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-primary:hover { opacity: 0.95; }
+
+.lead { font-size: 1.125rem; color:#334e68; }
+
+/* Dashboard layout */
+.dashboard-layout { display: flex; gap: 16px; align-items: flex-start; }
+.dashboard-sidebar { min-width: 200px; max-width: 260px; }
+.dashboard-sidebar .dashboard-nav { display:flex; flex-direction:column; gap:8px; margin-top:8px; }
+.dashboard-sidebar .dashboard-nav a { color: #0366d6; }
+.dashboard-content { flex: 1; }
+.btn-logout { margin-top: 12px; background: #d64545; color: #fff; border: none; padding:8px 10px; border-radius:6px; cursor:pointer; }
+
+/* Small responsive tweaks */
+@media (max-width: 720px) {
+  .dashboard-layout { flex-direction: column; }
+  .dashboard-sidebar { width: 100%; }
+}
